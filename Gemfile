@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-github-metadata"
 gem "jekyll-feed", "~> 0.12"
+gem "faraday-retry"
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.6"
