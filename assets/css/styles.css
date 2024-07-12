@@ -8,11 +8,14 @@ body, html {
 }
 
 body {
+    background-color: #113;
+    display: flex;
+}
+
+* {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #fff;
-    background-color: #113;
-    display: flex;
 }
 
 .container {
