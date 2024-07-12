@@ -37,6 +37,7 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+          PAGES_REPO_NWO: sammilucia/sammilucia.github.io
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
