@@ -68,19 +68,31 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-.project-list a, .article-list a {
-    color: #ffffff;
-    text-decoration: underline;
+/* Link styles */
+a {
+    color: #fff;
+    text-decoration: none;
     font-weight: 400;
 }
 
-.project-list a:hover, .article-list a:hover {
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.project-list a:hover,
+.article-list a:hover,
+.project-list a:focus,
+.article-list a:focus {
     text-decoration: underline;
 }
 
 .project-description {
     font-size: 0.9rem;
-    color: #fff;
+    color: #ccc;
 }
 
 /* Responsive design */
