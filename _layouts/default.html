@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Your head content -->
-    <link rel="stylesheet" href="/path/to/your/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="left-column">
-            <img src="/path/to/your/image.jpg" alt="Samantha Glocker" class="profile-image">
+            <img src="/assets/images/sg-arizona.jpg" alt="Samantha Glocker" class="profile-image">
         </div>
         <div class="right-column">
             <div class="top-section">
@@ -16,14 +18,18 @@
                 <!-- Projects section -->
                 <h2>Projects</h2>
                 <ul class="project-list">
-                    <!-- Your projects here -->
+                    {% for project in site.data.projects %}
+                    <li><a href="{{ project.url }}">{{ project.name }}</a> — {{ project.description }}</li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="bottom-section">
                 <!-- Articles section -->
                 <h2>Articles</h2>
                 <ul class="article-list">
-                    <!-- Your articles here -->
+                    {% for article in site.articles limit:5 %}
+                    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
