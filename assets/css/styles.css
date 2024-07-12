@@ -11,8 +11,8 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #ffffff;
-    background-color: #1a1a2e;
+    color: #fff;
+    background-color: #113;
 }
 
 .container {
@@ -56,7 +56,7 @@ h2 {
     font-family: 'GFS Didot', serif;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #fff;
 }
 
 /* Project and Article lists */
@@ -70,7 +70,7 @@ h2 {
 
 .project-list a, .article-list a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 400;
 }
 
@@ -80,7 +80,7 @@ h2 {
 
 .project-description {
     font-size: 0.9rem;
-    color: #cccccc;
+    color: #fff;
 }
 
 /* Responsive design */
