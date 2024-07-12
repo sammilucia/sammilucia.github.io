@@ -7,20 +7,15 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <div class="left-column">
+            <img src="/path/to/your/image.jpg" alt="Samantha Glocker" class="profile-image">
             <h1>Samantha Glocker</h1>
-            <p class="subtitle">Engineer | Serial Entrepreneur | Complex Problem Solver</p>
+            <p class="subtitle">Engineer<br>Serial Entrepreneur<br>Complex Problem Solver</p>
         </div>
-    </header>
-
-    <main class="container">
-        <div class="content">
+        <div class="right-column">
             {{ content }}
         </div>
-        <aside class="sidebar">
-            <!-- You can add sidebar content here -->
-        </aside>
-    </main>
+    </div>
 </body>
 </html>
