@@ -1,1 +1,37 @@
+# Site settings
+title: Samantha Glocker
+description: Engineer | Serial Entrepreneur | Complex Problem Solver
+url: "https://samanthaglocker.io"  # Replace with your actual domain if different
 
+# Build settings
+markdown: kramdown
+theme: minima  # You can change this to another theme if you prefer
+
+# Collections
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
