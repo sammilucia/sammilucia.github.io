@@ -15,7 +15,7 @@ body {
 * {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #fff;
+    color: #eee;
 }
 
 .container {
@@ -23,19 +23,19 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    padding: 2rem;
 }
 
-.left-column {
+.left-section {
     flex: 1;
     display: flex;
     position: relative;
     overflow: hidden;
 }
 
-.right-column {
+.right-section {
     flex: 2;
     display: flex;
+    position: relative;
     overflow: hidden;
 }
 
@@ -53,18 +53,27 @@ body {
     flex: 2;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+}
+
+.bottom-row {
+    border-top: 1px solid #eee;
 }
 
 .inner-left,
 .inner-right {
     flex: 1;
     display: flex;
-    padding: 2rem;
     overflow-y: auto;
+}
+
+.inner-right {
+    padding-left: 2rem;
 }
 
 h1 {
     font-family: 'GFS Didot', serif;
+    font-weight: 400;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
@@ -84,7 +93,8 @@ h2 {
 a,
 a:visited,
 a:hover, a:focus {
-    color: #fff;
+    color: #eee;
+    font-weight: 600;
     text-decoration: underline;
 }
 
@@ -101,7 +111,7 @@ a:hover, a:focus {
 
 .project-description {
     font-size: 0.9rem;
-    color: #fff;
+    color: #eee;
 }
 
 /* Responsive design */
