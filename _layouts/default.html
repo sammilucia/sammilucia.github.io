@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <!-- Your head content -->
+    <link rel="stylesheet" href="/path/to/your/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="left-column">
-            <img src="/assets/images/sg-arizona.jpg" alt="Samantha Glocker" class="profile-image">
-            <h1>Samantha Glocker</h1>
-            <p class="subtitle">Systems Engineer<br>Serial Entrepreneur<br>Complex Problem Solver</p>
+            <img src="/path/to/your/image.jpg" alt="Samantha Glocker" class="profile-image">
         </div>
         <div class="right-column">
-            {{ content }}
+            <div class="top-section">
+                <h1>Samantha Glocker</h1>
+                <p class="subtitle">Systems Engineer | Serial Entrepreneur | Complex Problem Solver</p>
+                <!-- Projects section -->
+                <h2>Projects</h2>
+                <ul class="project-list">
+                    <!-- Your projects here -->
+                </ul>
+            </div>
+            <div class="bottom-section">
+                <!-- Articles section -->
+                <h2>Articles</h2>
+                <ul class="article-list">
+                    <!-- Your articles here -->
+                </ul>
+            </div>
         </div>
     </div>
 </body>
