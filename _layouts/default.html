@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Samantha Glocker</h1>
+            <p class="subtitle">Engineer | Serial Entrepreneur | Complex Problem Solver</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            {{ content }}
+        </div>
+        <aside class="sidebar">
+            <!-- You can add sidebar content here -->
+        </aside>
+    </main>
+</body>
+</html>
