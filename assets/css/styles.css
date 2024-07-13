@@ -64,14 +64,18 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
 	flex-direction: row;
 }
 
+.top-row {
+    padding-bottom: 2rem;
+}
+
 .bottom-row {
 	border-top: 1px solid #eee;
+    padding-top: 2rem;
 }
 
 .inner-left,
 .inner-right {
 	flex: 1;
-    padding: 2rem 0;
 	overflow-y: auto;
 }
 
@@ -92,7 +96,6 @@ h1 {
 
 .subtitle {
 	font-size: 32px;
-	margin: 0.5rem 0;
 }
 
 h2 {
