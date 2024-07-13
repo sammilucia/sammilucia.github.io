@@ -21,9 +21,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Inter', sans-serif;
-}
-
-body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, label, div {
 	font-size: 26px;
 	font-weight: 400;
 	color: #eee;
@@ -168,6 +165,11 @@ a:hover, a:focus {
 
 .simplebar-scrollbar:hover::before {
     background: #78788C !important;
+}
+
+.simplebar-scrollbar {
+    opacity: 1 !important;
+    transition: none !important;
 }
 
 /* Hide the default browser scrollbar */
