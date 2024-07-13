@@ -151,31 +151,23 @@ a:hover, a:focus {
 	}
 }
 
-/* SimpleBar custom scrollbar */
-.simplebar-track {
-    background: #113 !important;
+/* scrollbars */
+.bottom-row::-webkit-scrollbar {
+    width: 8px;
 }
 
-.simplebar-scrollbar::before {
-    background: #3E3E5A !important;
-    width: 29px !important;
-    border-radius: 0 !important; /* Remove rounded borders */
+.bottom-row::-webkit-scrollbar-track {
+    background: #113;
 }
 
-.simplebar-scrollbar:hover::before {
-    background: #78788C !important;
+.bottom-row::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #113;
 }
 
-.simplebar-scrollbar {
-    opacity: 1 !important;
-    transition: none !important;
-}
-
-/* Hide the default browser scrollbar */
-.simplebar-content-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.simplebar-content-wrapper {
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+/* For Firefox */
+.bottom-row {
+    scrollbar-width: thin;
+    scrollbar-color: #fff #113;
 }
