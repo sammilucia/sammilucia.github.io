@@ -124,6 +124,10 @@ a:hover, a:focus {
         height: auto;
     }
 
+    .left-section {
+        justify-content: center;
+    }
+
     .profile-image {
         width: initial;
         height: initial;
