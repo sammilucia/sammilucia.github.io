@@ -160,16 +160,16 @@ a:hover, a:focus {
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 18px;
+    width: 32px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #113;
+    background: #3E3E5A;
     border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3E3E5A;
+    background: #113;
     border-radius: 0;
 }
 
@@ -179,5 +179,5 @@ a:hover, a:focus {
 
 /* Firefox scrollbar */
 html {
-    scrollbar-color: #3E3E5A #113;
+    scrollbar-color: #113 #3E3E5A;
 }
