@@ -45,7 +45,7 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
     flex: 2;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 48px;
     overflow-y: auto;
 }
 
@@ -58,19 +58,22 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
     object-fit: cover;
 }
 
-.top-row {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-}
-
+.top-row,
 .bottom-row {
     flex: 1;
     display: flex;
+}
+
+.top-row {
+    flex-direction: column;
+    padding-bottom: 48px;
+    overflow-y: none;
+}
+
+.bottom-row {
     flex-direction: row;
     border-top: 1px solid #eee;
-    padding-top: 2rem;
+    padding-top: 48px;
     overflow-y: auto;
 }
 
@@ -81,11 +84,11 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
 }
 
 .inner-left {
-    padding-right: 2rem;
+    padding-right: 48px;
 }
 
 .inner-right {
-    padding-left: 2rem;
+    padding-left: 48px;
 }
 
 h1 {
