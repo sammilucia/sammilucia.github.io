@@ -177,6 +177,8 @@ a:hover, a:focus {
 .article-meta {
     font-size: 23px;
     margin-bottom: 29px;
+    border-top: 1px solid #eee;
+    padding-top: 29px;
 }
 
 .categories-list {
@@ -188,16 +190,21 @@ a:hover, a:focus {
     margin-bottom: 14.5px;
 }
 
+.right-column h2 {
+    font-size: 29px;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 14.5px 43.5px;
-    background-color: #1a1a2e;
+    border-top: 1px solid #eee;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
+    background: none;
 }
 
 .home-link {
