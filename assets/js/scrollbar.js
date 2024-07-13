@@ -1,4 +1,4 @@
-class SimpleScrollbar {
+class Scrollbar {
     constructor(element) {
         this.element = element;
         this.init();
@@ -17,8 +17,8 @@ class SimpleScrollbar {
         this.scrollbarTrack = document.createElement('div');
         this.scrollbarThumb = document.createElement('div');
 
-        this.scrollbarTrack.classList.add('simple-scrollbar-track');
-        this.scrollbarThumb.classList.add('simple-scrollbar-thumb');
+        this.scrollbarTrack.classList.add('scrollbar-track');
+        this.scrollbarThumb.classList.add('scrollbar-thumb');
 
         this.scrollbarTrack.appendChild(this.scrollbarThumb);
         this.element.appendChild(this.scrollbarTrack);
@@ -103,7 +103,7 @@ class SimpleScrollbar {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('[data-simple-scrollbar]').forEach(function (el) {
-        new SimpleScrollbar(el);
+    document.querySelectorAll('[data-scrollbar]').forEach(function (el) {
+        new Scrollbar(el);
     });
 });

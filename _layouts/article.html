@@ -1,7 +1,39 @@
 ---
 layout: default
 ---
-<article>
-	<h1>{{ page.title }}</h1>
-	{{ content }}
-</article>
+<div class="article-container">
+    <div class="left-column">
+        <!-- Left column content -->
+    </div>
+    <main class="center-column">
+        <h1>{{ page.title }}</h1>
+        <p class="article-meta">Last updated {{ page.date | date: "%d %B %Y" }} in 
+            {% for category in page.categories %}
+                <a href="/category/{{ category | slugify }}">#{{ category }}</a>
+            {% endfor %}
+        </p>
+        <article>
+            {{ content }}
+        </article>
+    </main>
+    <div class="right-column">
+        <h2>Categories</h2>
+        <ul class="categories-list">
+            {% for category in site.categories %}
+                <li><a href="/category/{{ category[0] | slugify }}">#{{ category[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<footer>
+    <a href="/" class="home-link">< Home</a>
+    <div class="social-links">
+        Share on:
+        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="reddit"><i class="fab fa-reddit-alien"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <span class="author">Samantha Glocker</span>
+</footer>
+<script src="/assets/js/share.js"></script>
