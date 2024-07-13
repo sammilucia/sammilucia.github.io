@@ -47,6 +47,7 @@ class SimpleScrollbar {
 
         const onMouseDown = (e) => {
             isDragging = true;
+            this.scrollbarThumb.classList.add('active');
             startY = e.clientY;
             startScrollTop = this.scrollContent.scrollTop;
             document.addEventListener('mousemove', onMouseMove);
@@ -67,6 +68,7 @@ class SimpleScrollbar {
 
         const onMouseUp = () => {
             isDragging = false;
+            this.scrollbarThumb.classList.remove('active');
             document.removeEventListener('mousemove', onMouseMove);
             document.removeEventListener('mouseup', onMouseUp);
         };

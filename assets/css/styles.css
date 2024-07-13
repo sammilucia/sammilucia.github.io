@@ -159,6 +159,14 @@ a:hover, a:focus {
     overflow-y: scroll;
     margin-right: -20px;
     padding-right: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
 }
 
 .simple-scrollbar-track {
@@ -179,7 +187,8 @@ a:hover, a:focus {
     cursor: pointer;
 }
 
-.simple-scrollbar-thumb:hover {
+.simple-scrollbar-thumb:hover,
+.simple-scrollbar-thumb.active {
     background: #78788C;
 }
 
