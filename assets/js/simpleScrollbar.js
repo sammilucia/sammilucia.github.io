@@ -5,11 +5,9 @@ class SimpleScrollbar {
 	}
 
 	init() {
-		// Apply custom scrollbar styles
 		this.element.style.overflow = 'hidden';
 		this.element.style.position = 'relative';
 
-		// Create custom scrollbar elements
 		this.scrollbarTrack = document.createElement('div');
 		this.scrollbarThumb = document.createElement('div');
 
@@ -37,7 +35,6 @@ class SimpleScrollbar {
 	}
 
 	attachEvents() {
-		// Scroll content when dragging the scrollbar
 		this.scrollbarThumb.addEventListener('mousedown', (event) => {
 			event.preventDefault();
 
@@ -48,7 +45,7 @@ class SimpleScrollbar {
 
 			const onMouseMove = (event) => {
 				const deltaY = event.clientY - startY;
-				const newScrollTop = startScrollTop + deltaY * (maxScrollTop / (this.element.clientHeight - scrollbarHeight));
+				const newScrollTop = startScrollTop + (deltaY / this.element.clientHeight) * this.element.scrollHeight;
 				this.element.scrollTop = Math.min(Math.max(newScrollTop, 0), maxScrollTop);
 				this.updateScrollbarThumbPosition();
 			};
@@ -62,7 +59,6 @@ class SimpleScrollbar {
 			document.addEventListener('mouseup', onMouseUp);
 		});
 
-		// Handle touch events
 		this.scrollbarThumb.addEventListener('touchstart', (event) => {
 			const startY = event.touches[0].clientY;
 			const startScrollTop = this.element.scrollTop;
@@ -71,7 +67,7 @@ class SimpleScrollbar {
 
 			const onTouchMove = (event) => {
 				const deltaY = event.touches[0].clientY - startY;
-				const newScrollTop = startScrollTop + deltaY * (maxScrollTop / (this.element.clientHeight - scrollbarHeight));
+				const newScrollTop = startScrollTop + (deltaY / this.element.clientHeight) * this.element.scrollHeight;
 				this.element.scrollTop = Math.min(Math.max(newScrollTop, 0), maxScrollTop);
 				this.updateScrollbarThumbPosition();
 			};
@@ -85,17 +81,14 @@ class SimpleScrollbar {
 			document.addEventListener('touchend', onTouchEnd);
 		});
 
-		// Update scrollbar on scroll
 		this.element.addEventListener('scroll', () => {
 			this.updateScrollbarThumbPosition();
 		});
 
-		// Update scrollbar on resize
 		window.addEventListener('resize', () => {
 			this.updateScrollbar();
 		});
 
-		// Handle mousewheel events
 		this.element.addEventListener('wheel', (event) => {
 			if (!event.ctrlKey) {
 				event.preventDefault();
@@ -104,7 +97,6 @@ class SimpleScrollbar {
 			}
 		});
 
-		// Allow ctrl + mouse wheel to zoom the page
 		document.addEventListener('wheel', (event) => {
 			if (event.ctrlKey) {
 				event.stopPropagation(); // Allow zoom to propagate
