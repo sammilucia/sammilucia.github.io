@@ -10,7 +10,6 @@
 
 body, html {
     height: 100%;
-    /* overflow: hidden; */
 }
 
 body {
@@ -128,19 +127,22 @@ a:hover, a:focus {
         height: auto;
     }
 
-    .left-section {
-        height: 300px;
+    .profile-image {
+        width: initial;
+        height: initial;
     }
 
     .bottom-row {
         flex-direction: column;
         padding: 0;
+        border: none;
     }
 
     .inner-left,
     .inner-right {
         padding-right: 0;
-        padding: 43.5px;
+        padding: 43.5px 0;
+        border-top: 1px solid #eee;
     }
 }
 
