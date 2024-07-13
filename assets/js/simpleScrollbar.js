@@ -43,30 +43,44 @@ class SimpleScrollbar {
 
             const startY = event.clientY;
             const startScrollTop = this.element.scrollTop;
+            const scrollbarHeight = this.scrollbarThumb.clientHeight;
+            const maxScrollTop = this.element.scrollHeight - this.element.clientHeight;
+
             const onMouseMove = (event) => {
                 const deltaY = event.clientY - startY;
-                this.element.scrollTop = startScrollTop + deltaY / this.element.clientHeight * this.element.scrollHeight;
+                const newScrollTop = startScrollTop + (deltaY / (this.element.clientHeight - scrollbarHeight)) * maxScrollTop;
+                this.element.scrollTop = newScrollTop;
+            };
+
+            const onMouseUp = () => {
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
             };
 
             document.addEventListener('mousemove', onMouseMove);
-            document.addEventListener('mouseup', () => {
-                document.removeEventListener('mousemove', onMouseMove);
-            }, { once: true });
+            document.addEventListener('mouseup', onMouseUp);
         });
 
         // Handle touch events
         this.scrollbarThumb.addEventListener('touchstart', (event) => {
             const startY = event.touches[0].clientY;
             const startScrollTop = this.element.scrollTop;
+            const scrollbarHeight = this.scrollbarThumb.clientHeight;
+            const maxScrollTop = this.element.scrollHeight - this.element.clientHeight;
+
             const onTouchMove = (event) => {
                 const deltaY = event.touches[0].clientY - startY;
-                this.element.scrollTop = startScrollTop + deltaY / this.element.clientHeight * this.element.scrollHeight;
+                const newScrollTop = startScrollTop + (deltaY / (this.element.clientHeight - scrollbarHeight)) * maxScrollTop;
+                this.element.scrollTop = newScrollTop;
+            };
+
+            const onTouchEnd = () => {
+                document.removeEventListener('touchmove', onTouchMove);
+                document.removeEventListener('touchend', onTouchEnd);
             };
 
             document.addEventListener('touchmove', onTouchMove);
-            document.addEventListener('touchend', () => {
-                document.removeEventListener('touchmove', onTouchMove);
-            }, { once: true });
+            document.addEventListener('touchend', onTouchEnd);
         });
 
         // Update scrollbar on scroll
@@ -86,9 +100,18 @@ class SimpleScrollbar {
 
         // Handle mousewheel events
         this.element.addEventListener('wheel', (event) => {
-            event.preventDefault();
-            this.element.scrollTop += event.deltaY;
+            if (!event.ctrlKey) {
+                event.preventDefault();
+                this.element.scrollTop += event.deltaY;
+            }
         });
+
+        // Allow ctrl + mouse wheel to zoom the page
+        document.addEventListener('wheel', (event) => {
+            if (event.ctrlKey) {
+                event.stopPropagation(); // Allow zoom to propagate
+            }
+        }, { passive: false });
     }
 }
 

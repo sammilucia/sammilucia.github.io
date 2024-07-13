@@ -78,9 +78,6 @@ body {
 .inner-right {
     flex: 1;
     overflow-y: auto;
-}
-
-.inner-left {
     padding-right: 43.5px;
 }
 
