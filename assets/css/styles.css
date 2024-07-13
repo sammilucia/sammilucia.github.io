@@ -81,8 +81,9 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
 
 h1 {
 	font-family: 'GFS Didot', serif;
-	font-size: 65px;
-	margin: 0;
+	font-size: 64px;
+    line-height: 64px;
+	margin: 0 0 64px 0;
 }
 
 .subtitle {
@@ -92,7 +93,8 @@ h1 {
 
 h2 {
 	font-size: 42px;
-	margin-bottom: 1rem;
+    font-weight: 600;
+	margin-bottom: 48px;
 }
 
 ul {
