@@ -8,6 +8,12 @@ class SimpleScrollbar {
         this.element.style.overflow = 'hidden';
         this.element.style.position = 'relative';
 
+        this.scrollContent = document.createElement('div');
+        this.scrollContent.className = 'scroll-content';
+        this.scrollContent.innerHTML = this.element.innerHTML;
+        this.element.innerHTML = '';
+        this.element.appendChild(this.scrollContent);
+
         this.scrollbarTrack = document.createElement('div');
         this.scrollbarThumb = document.createElement('div');
 
@@ -22,7 +28,7 @@ class SimpleScrollbar {
     }
 
     updateScrollbar() {
-        const contentHeight = this.element.scrollHeight;
+        const contentHeight = this.scrollContent.scrollHeight;
         const visibleHeight = this.element.clientHeight;
 
         if (contentHeight <= visibleHeight) {
@@ -41,8 +47,8 @@ class SimpleScrollbar {
 
         const onMouseDown = (e) => {
             isDragging = true;
-            startY = e.clientY - this.scrollbarThumb.getBoundingClientRect().top;
-            startScrollTop = this.element.scrollTop;
+            startY = e.clientY;
+            startScrollTop = this.scrollContent.scrollTop;
             document.addEventListener('mousemove', onMouseMove);
             document.addEventListener('mouseup', onMouseUp);
             e.preventDefault();
@@ -50,12 +56,12 @@ class SimpleScrollbar {
 
         const onMouseMove = (e) => {
             if (!isDragging) return;
-            const y = e.clientY - this.scrollbarTrack.getBoundingClientRect().top;
+            const delta = e.clientY - startY;
             const trackHeight = this.scrollbarTrack.clientHeight;
             const thumbHeight = this.scrollbarThumb.clientHeight;
-            const scrollableHeight = this.element.scrollHeight - this.element.clientHeight;
-            const scrollPercent = (y - startY) / (trackHeight - thumbHeight);
-            this.element.scrollTop = startScrollTop + scrollPercent * scrollableHeight;
+            const scrollableHeight = this.scrollContent.scrollHeight - this.element.clientHeight;
+            const scrollDistance = (delta / (trackHeight - thumbHeight)) * scrollableHeight;
+            this.scrollContent.scrollTop = startScrollTop + scrollDistance;
             this.updateScrollbarThumbPosition();
         };
 
@@ -67,7 +73,7 @@ class SimpleScrollbar {
 
         this.scrollbarThumb.addEventListener('mousedown', onMouseDown);
 
-        this.element.addEventListener('scroll', () => {
+        this.scrollContent.addEventListener('scroll', () => {
             this.updateScrollbarThumbPosition();
         });
 
@@ -78,14 +84,14 @@ class SimpleScrollbar {
         this.element.addEventListener('wheel', (event) => {
             if (!event.ctrlKey) {
                 event.preventDefault();
-                this.element.scrollTop += event.deltaY;
+                this.scrollContent.scrollTop += event.deltaY;
                 this.updateScrollbarThumbPosition();
             }
         });
     }
 
     updateScrollbarThumbPosition() {
-        const scrollPercent = this.element.scrollTop / (this.element.scrollHeight - this.element.clientHeight);
+        const scrollPercent = this.scrollContent.scrollTop / (this.scrollContent.scrollHeight - this.element.clientHeight);
         const trackHeight = this.scrollbarTrack.clientHeight;
         const thumbHeight = this.scrollbarThumb.clientHeight;
         const maxTop = trackHeight - thumbHeight;

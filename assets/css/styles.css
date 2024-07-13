@@ -149,6 +149,18 @@ a:hover, a:focus {
 }
 
 /* SimpleScrollbar */
+[data-simple-scrollbar] {
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-content {
+    height: 100%;
+    overflow-y: scroll;
+    margin-right: -20px;
+    padding-right: 20px;
+}
+
 .simple-scrollbar-track {
     background: #113;
     position: absolute;
