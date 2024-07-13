@@ -126,9 +126,12 @@ a:hover, a:focus {
 
     .left-section {
         justify-content: center;
+        overflow: hidden;
     }
 
     .profile-image {
+        position: relative;
+        top: 400px;
         width: initial;
         height: initial;
     }
