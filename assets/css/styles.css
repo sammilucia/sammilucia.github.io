@@ -3,169 +3,184 @@
 
 /* reset styles */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-	overflow: hidden;
+body, html {
+    height: 100%;
+    /* overflow: hidden; */
 }
 
 body {
-	background-color: #113;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Inter', sans-serif;
-	font-size: 23.5px;
-	font-weight: 400;
-	color: #eee;
-	line-height: 43.5px;
+    background-color: #113;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #eee;
+    line-height: 48px;
+    transform: scale(0.9); /* Scale the entire body to 90% */
+    transform-origin: 0 0; /* Ensure the scaling starts from the top-left corner */
 }
 
 .container {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .left-section {
-	flex: 1;
-	display: flex;
-	position: relative;
+    flex: 1;
+    display: flex;
+    position: relative;
 }
 
 .right-section {
-	flex: 2;
-	display: flex;
-	flex-direction: column;
-	padding: 43.5px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    overflow-y: auto;
+    margin-left: 29px; /* Add margin to accommodate scrollbar */
 }
 
 .profile-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .top-row,
 .bottom-row {
-	flex: 1;
-	display: flex;
+    flex: 1;
+    display: flex;
 }
 
 .top-row {
-	flex-direction: column;
-	padding-bottom: 43.5px;
+    flex-direction: column;
+    padding-bottom: 48px;
+    overflow-y: none;
 }
 
 .bottom-row {
-	flex-direction: row;
-	border-top: 1px solid #eee;
-	padding-top: 43.5px;
+    flex-direction: row;
+    border-top: 1px solid #eee;
+    padding-top: 48px;
+    overflow-y: auto;
 }
 
 .inner-left,
 .inner-right {
-	flex: 1;
+    flex: 1;
+    overflow-y: auto;
 }
 
 .inner-left {
-	padding-right: 43.5px;
+    padding-right: 48px;
 }
 
 .inner-right {
-	padding-left: 43.5px;
+    padding-left: 48px;
 }
 
 h1 {
-	font-family: 'GFS Didot', serif;
-    font-weight: 400;
-	font-size: 58px;
-	line-height: 58px;
-	margin: 0 0 58px 0;
+    font-family: 'GFS Didot', serif;
+    font-size: 64px;
+    line-height: 64px;
+    margin: 0 0 64px 0;
 }
 
 .subtitle {
-	font-size: 29px;
+    font-size: 32px;
 }
 
 h2 {
-	font-size: 42px;
-	font-weight: 600;
-	margin-bottom: 43.5px;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 48px;
 }
 
 ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* link styles */
 a,
 a:visited {
-	color: #eee;
-	font-weight: 600;
-	text-decoration: underline;
+    color: #eee;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 a:hover, a:focus {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 /* responsive */
 @media (max-width: 768px) {
-	.container {
-		flex-direction: column;
-		height: auto;
-	}
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
 
-	.left-section {
-		height: 300px;
-	}
+    .left-section {
+        height: 300px;
+    }
 
-	.right-section {
-		padding: 1rem;
-	}
+    .right-section {
+        padding: 1rem;
+    }
 
-	.bottom-row {
-		flex-direction: column;
-		margin-top: 1rem;
-	}
+    .bottom-row {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
 
-	.inner-left,
-	.inner-right {
-		padding-right: 0;
-		padding-bottom: 1rem;
-	}
+    .inner-left,
+    .inner-right {
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
 }
 
-/* SimpleScrollbar */
+/* SimpleScrollbar custom scrollbar */
 .simple-scrollbar-track {
-    background: #113 !important;
+    background: #113;
     position: absolute;
     right: 0;
     top: 0;
-    width: 32px;
+    width: 29px;
     height: 100%;
 }
 
 .simple-scrollbar-thumb {
-    background: #3E3E5A !important;
-    width: 32px !important;
-    border-radius: 0 !important; /* Remove rounded borders */
+    background: #3E3E5A;
+    width: 29px;
     position: absolute;
     top: 0;
     right: 0;
 }
 
 .simple-scrollbar-thumb:hover {
-    background: #78788C !important;
+    background: #78788C;
+}
+
+/* Hide the default browser scrollbar */
+[data-simple-scrollbar] {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+[data-simple-scrollbar]::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
 }
