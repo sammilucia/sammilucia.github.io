@@ -171,6 +171,7 @@ a:hover, a:focus {
 ::-webkit-scrollbar-thumb {
     background: #113;
     border-radius: 0;
+    border: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
