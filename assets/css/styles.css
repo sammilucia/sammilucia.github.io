@@ -192,16 +192,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 14.5px 43.5px;
-    border-top: 1px solid #eee;
-}
-
-.home-link {
-    text-decoration: none;
-}
-
-.social-links a {
-    margin: 0 7px;
-    font-size: 20px;
+    background-color: #1a1a2e;
 }
 
 /* custom scrollbar */
