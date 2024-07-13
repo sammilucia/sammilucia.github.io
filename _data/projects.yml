@@ -18,15 +18,15 @@
   url: https://mactype.net
   description: Freetype for Windows
 
-- name: Cyberpunk 2077 Ultra Plus mod
+- name: Cyberpunk 2077
   url: https://www.nexusmods.com/cyberpunk2077/mods/10490
   description: redENGINE and path tracing fixes
 
-- name: Hogwarts Legacy Ultra Plus mod
+- name: Hogwarts Legacy
   url: https://www.nexusmods.com/hogwartslegacy/mods/660
   description: Unreal Engine fixes
 
-- name: 'Star Wars Jedi: Fallen Order mod'
+- name: 'Star Wars Jedi: Fallen Order'
   url: https://www.nexusmods.com/starwarsjedifallenorder/mods/778
   description: Unreal Engine and Respawn plugin fixes
 
