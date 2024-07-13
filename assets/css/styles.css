@@ -55,7 +55,7 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
 .bottom-row {
 	flex: 1;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	margin: 2rem;
 }
 
@@ -136,4 +136,29 @@ a:hover, a:focus {
 		padding-right: 0;
 		padding-bottom: 1rem;
 	}
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #113;
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3E3E5A;
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #78788C;
+}
+
+/* Firefox scrollbar */
+html {
+	/** scrollbar-width: thin; **/
+	scrollbar-color: #3E3E5A #113;
 }
