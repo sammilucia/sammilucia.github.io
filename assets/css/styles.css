@@ -132,19 +132,15 @@ a:hover, a:focus {
         height: 300px;
     }
 
-    .right-section {
-        padding: 1rem;
-    }
-
     .bottom-row {
         flex-direction: column;
-        margin-top: 1rem;
+        padding: 0;
     }
 
     .inner-left,
     .inner-right {
         padding-right: 0;
-        padding-bottom: 1rem;
+        padding: 43.5px;
     }
 }
 
