@@ -115,9 +115,8 @@ ul {
 }
 
 li {
-	margin-bottom: 0.5rem;
+	/* nothing */
 }
-
 
 /* link styles */
 a,
@@ -158,24 +157,15 @@ a:hover, a:focus {
 	}
 }
 
-/* scrollbar */
-.bottom-row::-webkit-scrollbar {
-	width: 32px;
+/* simpleBar scrollbar */
+.simplebar-track {
+    background: #113 !important;
 }
 
-.bottom-row::-webkit-scrollbar-track {
-	background-color: #113;
+.simplebar-scrollbar::before {
+    background: #3E3E5A !important;
 }
 
-.bottom-row::-webkit-scrollbar-thumb {
-	background-color: #3E3E5A;
-}
-
-.bottom-row::-webkit-scrollbar-thumb:hover {
-	background-color: #78788C;
-}
-
-/* Firefox scrollbar */
-html {
-	scrollbar-color: #3E3E5A #113;
+.simplebar-scrollbar:hover::before {
+    background: #78788C !important;
 }
