@@ -1,9 +1,16 @@
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
 collections:
   articles:
     output: true
     permalink: /articles/:title/
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
