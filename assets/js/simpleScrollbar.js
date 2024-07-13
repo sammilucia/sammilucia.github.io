@@ -48,8 +48,9 @@ class SimpleScrollbar {
 
             const onMouseMove = (event) => {
                 const deltaY = event.clientY - startY;
-                const newScrollTop = startScrollTop + (deltaY / (this.element.clientHeight - scrollbarHeight)) * maxScrollTop;
-                this.element.scrollTop = newScrollTop;
+                const scrollRatio = maxScrollTop / (this.element.clientHeight - scrollbarHeight);
+                const newScrollTop = startScrollTop + deltaY * scrollRatio;
+                this.element.scrollTop = Math.min(Math.max(newScrollTop, 0), maxScrollTop);
             };
 
             const onMouseUp = () => {
@@ -70,8 +71,9 @@ class SimpleScrollbar {
 
             const onTouchMove = (event) => {
                 const deltaY = event.touches[0].clientY - startY;
-                const newScrollTop = startScrollTop + (deltaY / (this.element.clientHeight - scrollbarHeight)) * maxScrollTop;
-                this.element.scrollTop = newScrollTop;
+                const scrollRatio = maxScrollTop / (this.element.clientHeight - scrollbarHeight);
+                const newScrollTop = startScrollTop + deltaY * scrollRatio;
+                this.element.scrollTop = Math.min(Math.max(newScrollTop, 0), maxScrollTop);
             };
 
             const onTouchEnd = () => {
@@ -85,12 +87,7 @@ class SimpleScrollbar {
 
         // Update scrollbar on scroll
         this.element.addEventListener('scroll', () => {
-            const scrollTop = this.element.scrollTop;
-            const contentHeight = this.element.scrollHeight;
-            const visibleHeight = this.element.clientHeight;
-            const scrollbarTop = scrollTop / contentHeight * visibleHeight;
-
-            this.scrollbarThumb.style.transform = `translateY(${scrollbarTop}px)`;
+            this.updateScrollbarThumbPosition();
         });
 
         // Update scrollbar on resize
@@ -103,6 +100,7 @@ class SimpleScrollbar {
             if (!event.ctrlKey) {
                 event.preventDefault();
                 this.element.scrollTop += event.deltaY;
+                this.updateScrollbarThumbPosition();
             }
         });
 
@@ -112,6 +110,14 @@ class SimpleScrollbar {
                 event.stopPropagation(); // Allow zoom to propagate
             }
         }, { passive: false });
+    }
+
+    updateScrollbarThumbPosition() {
+        const scrollTop = this.element.scrollTop;
+        const contentHeight = this.element.scrollHeight;
+        const visibleHeight = this.element.clientHeight;
+        const scrollbarTop = scrollTop / contentHeight * visibleHeight;
+        this.scrollbarThumb.style.transform = `translateY(${scrollbarTop}px)`;
     }
 }
 
