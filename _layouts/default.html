@@ -13,10 +13,8 @@
         </div>
         <div class="right-section">
             <div class="top-row">
-                <h1>Samantha Glocker</h1>
-                <p class="subtitle">Systems Engineer
-                    <br />Serial Entrepreneur
-                </p>
+                <h1>{{ site.title }}</h1>
+                {{ content }}
             </div>
             <div class="bottom-row">
                 <div class="inner-left" data-scrollbar>
@@ -30,7 +28,7 @@
                 <div class="inner-right" data-scrollbar>
                     <h2>Articles</h2>
                     <ul class="article-list">
-                        {% for article in site.articles limit:5 %}
+                        {% for article in site.articles %}
                         <li><a href="{{ article.url }}">{{ article.title }}</a></li>
                         {% endfor %}
                     </ul>
@@ -38,6 +36,6 @@
             </div>
         </div>
     </div>
-    <script src="/assets/js/scrollbar.js"></script>
+    <script src="/assets/js/scrollbar.js"></script> <!-- Include your custom JavaScript file -->
 </body>
 </html>

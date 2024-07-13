@@ -5,9 +5,11 @@ title: Samantha Glocker
 
 # Samantha Glocker
 
-Systems Engineer
-Entrepreneur
-Complex Problem Solver
+<p class="subtitle">
+    Systems Engineer<br>
+    Entrepreneur<br>
+    Complex Problem Solver
+</p>
 
 ## Projects
 
