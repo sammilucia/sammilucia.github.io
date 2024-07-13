@@ -114,10 +114,6 @@ ul {
 	margin: 0;
 }
 
-li {
-	/* nothing */
-}
-
 /* link styles */
 a,
 a:visited {
@@ -157,15 +153,26 @@ a:hover, a:focus {
 	}
 }
 
-/* simpleBar scrollbar */
+/* SimpleBar custom scrollbar */
 .simplebar-track {
     background: #113 !important;
 }
 
 .simplebar-scrollbar::before {
     background: #3E3E5A !important;
+    width: 32px !important;
+    border-radius: 0 !important; /* Remove rounded borders */
 }
 
 .simplebar-scrollbar:hover::before {
     background: #78788C !important;
+}
+
+/* Hide the default browser scrollbar */
+.simplebar-content-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.simplebar-content-wrapper {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
