@@ -1,24 +1,21 @@
-# Site settings
+# site settings
 title: Samantha Glocker
 description: Systems Engineer | Serial Entrepreneur | Complex Problem Solver
-url: "https://samanthaglocker.io"  # Replace with your actual domain if different
-baseurl: ""  # Leave this empty if your site is at the root of your domain
+url: "https://sammilucia.github.io"
+baseurl: ""  # leave blank if site is in root folder
 
-# Build settings
+# build settings
 markdown: kramdown
-theme: minima  # You can change this to another theme if you prefer
+theme: minima
 
 # GitHub metadata settings
 repository: sammilucia/sammilucia.github.io
-github: [metadata]
 
-# Collections
 collections:
   articles:
     output: true
     permalink: /articles/:name
 
-# Defaults
 defaults:
   - scope:
       path: ""
@@ -26,13 +23,11 @@ defaults:
     values:
       layout: "article"
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-github-metadata
 
-# Exclude files from processing
 exclude:
   - Gemfile
   - Gemfile.lock
