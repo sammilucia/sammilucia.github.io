@@ -19,12 +19,10 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Inter', sans-serif;
-    font-size: 26px;
+    font-size: 23.5px;
     font-weight: 400;
     color: #eee;
-    line-height: 48px;
-    transform: scale(0.9); /* Scale the entire body to 90% */
-    transform-origin: 0 0; /* Ensure the scaling starts from the top-left corner */
+    line-height: 43.5px;
 }
 
 .container {
@@ -44,9 +42,8 @@ body {
     flex: 2;
     display: flex;
     flex-direction: column;
-    padding: 48px;
+    padding: 43.5px;
     overflow-y: auto;
-    margin-left: 29px; /* Add margin to accommodate scrollbar */
 }
 
 .profile-image {
@@ -66,14 +63,14 @@ body {
 
 .top-row {
     flex-direction: column;
-    padding-bottom: 48px;
+    padding-bottom: 43.5px;
     overflow-y: none;
 }
 
 .bottom-row {
     flex-direction: row;
     border-top: 1px solid #eee;
-    padding-top: 48px;
+    padding-top: 43.5px;
     overflow-y: auto;
 }
 
@@ -84,28 +81,29 @@ body {
 }
 
 .inner-left {
-    padding-right: 48px;
+    padding-right: 43.5px;
 }
 
 .inner-right {
-    padding-left: 48px;
+    padding-left: 43.5px;
 }
 
 h1 {
     font-family: 'GFS Didot', serif;
-    font-size: 64px;
-    line-height: 64px;
-    margin: 0 0 64px 0;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 58px;
+    margin: 0 0 58px 0;
 }
 
 .subtitle {
-    font-size: 32px;
+    font-size: 29px;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 43.5px;
     font-weight: 600;
-    margin-bottom: 48px;
+    margin-bottom: 43.5px;
 }
 
 ul {
@@ -153,7 +151,7 @@ a:hover, a:focus {
     }
 }
 
-/* SimpleScrollbar custom scrollbar */
+/* SimpleScrollbar */
 .simple-scrollbar-track {
     background: #113;
     position: absolute;
@@ -175,12 +173,12 @@ a:hover, a:focus {
     background: #78788C;
 }
 
-/* Hide the default browser scrollbar */
+/* hide default browser scrollbar */
 [data-simple-scrollbar] {
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 [data-simple-scrollbar]::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for WebKit browsers */
+    display: none;
 }

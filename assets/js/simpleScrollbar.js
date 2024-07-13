@@ -5,11 +5,11 @@ class SimpleScrollbar {
     }
 
     init() {
-        // apply custom scrollbar styles
+        // Apply custom scrollbar styles
         this.element.style.overflow = 'hidden';
         this.element.style.position = 'relative';
 
-        // create custom scrollbar elements
+        // Create custom scrollbar elements
         this.scrollbarTrack = document.createElement('div');
         this.scrollbarThumb = document.createElement('div');
 
@@ -26,13 +26,18 @@ class SimpleScrollbar {
     updateScrollbar() {
         const contentHeight = this.element.scrollHeight;
         const visibleHeight = this.element.clientHeight;
-        const scrollbarHeight = visibleHeight / contentHeight * visibleHeight;
 
-        this.scrollbarThumb.style.height = `${scrollbarHeight}px`;
+        if (contentHeight <= visibleHeight) {
+            this.scrollbarTrack.style.display = 'none';
+        } else {
+            this.scrollbarTrack.style.display = 'block';
+            const scrollbarHeight = visibleHeight / contentHeight * visibleHeight;
+            this.scrollbarThumb.style.height = `${scrollbarHeight}px`;
+        }
     }
 
     attachEvents() {
-        // scroll content when dragging the scrollbar
+        // Scroll content when dragging the scrollbar
         this.scrollbarThumb.addEventListener('mousedown', (event) => {
             event.preventDefault();
 
@@ -49,7 +54,7 @@ class SimpleScrollbar {
             }, { once: true });
         });
 
-        // handle touch events
+        // Handle touch events
         this.scrollbarThumb.addEventListener('touchstart', (event) => {
             const startY = event.touches[0].clientY;
             const startScrollTop = this.element.scrollTop;
@@ -64,7 +69,7 @@ class SimpleScrollbar {
             }, { once: true });
         });
 
-        // update scrollbar on scroll
+        // Update scrollbar on scroll
         this.element.addEventListener('scroll', () => {
             const scrollTop = this.element.scrollTop;
             const contentHeight = this.element.scrollHeight;
@@ -74,9 +79,15 @@ class SimpleScrollbar {
             this.scrollbarThumb.style.transform = `translateY(${scrollbarTop}px)`;
         });
 
-        // update scrollbar on resize
+        // Update scrollbar on resize
         window.addEventListener('resize', () => {
             this.updateScrollbar();
+        });
+
+        // Handle mousewheel events
+        this.element.addEventListener('wheel', (event) => {
+            event.preventDefault();
+            this.element.scrollTop += event.deltaY;
         });
     }
 }
