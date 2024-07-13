@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Include SimpleBar CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
 </head>
 <body>
     <div class="container">
@@ -20,7 +22,7 @@
                 </p>
             </div>
             <div class="bottom-row">
-                <div class="inner-left">
+                <div class="inner-left" data-simplebar>
                     <h2>Projects</h2>
                     <ul class="project-list">
                         {% for project in site.data.projects %}
@@ -28,7 +30,7 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <div class="inner-right">
+                <div class="inner-right" data-simplebar>
                     <h2>Articles</h2>
                     <ul class="article-list">
                         {% for article in site.articles limit:5 %}
@@ -39,5 +41,7 @@
             </div>
         </div>
     </div>
+    <!-- Include SimpleBar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 </html>
