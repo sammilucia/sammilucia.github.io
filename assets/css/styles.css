@@ -192,7 +192,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 14.5px 43.5px;
-    background-color: #1a1a2e;
+    border-top: 1px solid #eee;
 }
 
 .home-link {
