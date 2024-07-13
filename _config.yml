@@ -15,16 +15,16 @@ github: [metadata]
 # Collections
 collections:
   articles:
-	output: true
-	permalink: /articles/:name
+    output: true
+    permalink: /articles/:name
 
 # Defaults
 defaults:
   - scope:
-	  path: ""
-	  type: "articles"
-	values:
-	  layout: "article"
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
 
 # Plugins
 plugins:
