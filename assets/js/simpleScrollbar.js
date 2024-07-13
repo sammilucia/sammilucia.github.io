@@ -31,7 +31,7 @@ class SimpleScrollbar {
 			this.scrollbarTrack.style.display = 'none';
 		} else {
 			this.scrollbarTrack.style.display = 'block';
-			const scrollbarHeight = visibleHeight / contentHeight * visibleHeight;
+			const scrollbarHeight = (visibleHeight / contentHeight) * visibleHeight;
 			this.scrollbarThumb.style.height = `${scrollbarHeight}px`;
 		}
 	}
@@ -48,7 +48,7 @@ class SimpleScrollbar {
 			console.log('mousedown: startY =', startY, 'startScrollTop =', startScrollTop);
 
 			const onMouseMove = (event) => {
-				const deltaY = event.clientY - startY;
+				const deltaY = (event.clientY - startY) * (window.devicePixelRatio || 1);
 				const newScrollTop = startScrollTop + (deltaY / this.element.clientHeight) * this.element.scrollHeight;
 				console.log('mousemove: deltaY =', deltaY, 'newScrollTop =', newScrollTop);
 
@@ -74,7 +74,7 @@ class SimpleScrollbar {
 			console.log('touchstart: startY =', startY, 'startScrollTop =', startScrollTop);
 
 			const onTouchMove = (event) => {
-				const deltaY = event.touches[0].clientY - startY;
+				const deltaY = (event.touches[0].clientY - startY) * (window.devicePixelRatio || 1);
 				const newScrollTop = startScrollTop + (deltaY / this.element.clientHeight) * this.element.scrollHeight;
 				console.log('touchmove: deltaY =', deltaY, 'newScrollTop =', newScrollTop);
 
