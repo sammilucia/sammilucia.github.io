@@ -1,4 +1,9 @@
 collections:
   articles:
     output: true
-    permalink: /articles/:name
+    permalink: /articles/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
