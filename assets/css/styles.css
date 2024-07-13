@@ -207,8 +207,10 @@ footer {
     background: none;
 }
 
-.home-link {
-    text-decoration: none;
+footer a,
+footer a:visited {
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 .social-links a {
