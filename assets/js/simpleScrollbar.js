@@ -25,8 +25,6 @@ class SimpleScrollbar {
 		const contentHeight = this.element.scrollHeight;
 		const visibleHeight = this.element.clientHeight;
 
-		console.log('updateScrollbar: contentHeight =', contentHeight, 'visibleHeight =', visibleHeight);
-
 		if (contentHeight <= visibleHeight) {
 			this.scrollbarTrack.style.display = 'none';
 		} else {
@@ -45,16 +43,14 @@ class SimpleScrollbar {
 			const scrollbarHeight = this.scrollbarThumb.clientHeight;
 			const maxScrollTop = this.element.scrollHeight - this.element.clientHeight;
 
-			console.log('mousedown: startY =', startY, 'startScrollTop =', startScrollTop);
-
-			const onMouseMove = (event) => {
-				const deltaY = (event.clientY - startY) * (window.devicePixelRatio || 1);
-				const newScrollTop = startScrollTop + (deltaY / this.element.clientHeight) * this.element.scrollHeight;
-				console.log('mousemove: deltaY =', deltaY, 'newScrollTop =', newScrollTop);
-
-				this.element.scrollTop = Math.min(Math.max(newScrollTop, 0), maxScrollTop);
-				this.updateScrollbarThumbPosition();
-			};
+            const onMouseMove = (event) => {
+                const deltaY = event.clientY - startY;
+                const scrollRatio = this.element.scrollHeight / this.element.clientHeight;
+                const newScrollTop = startScrollTop + (deltaY * scrollRatio);
+            
+                this.element.scrollTop = Math.min(Math.max(newScrollTop, 0), maxScrollTop);
+                this.updateScrollbarThumbPosition();
+            };
 
 			const onMouseUp = () => {
 				document.removeEventListener('mousemove', onMouseMove);
@@ -68,15 +64,10 @@ class SimpleScrollbar {
 		this.scrollbarThumb.addEventListener('touchstart', (event) => {
 			const startY = event.touches[0].clientY;
 			const startScrollTop = this.element.scrollTop;
-			const scrollbarHeight = this.scrollbarThumb.clientHeight;
 			const maxScrollTop = this.element.scrollHeight - this.element.clientHeight;
-
-			console.log('touchstart: startY =', startY, 'startScrollTop =', startScrollTop);
-
 			const onTouchMove = (event) => {
 				const deltaY = (event.touches[0].clientY - startY) * (window.devicePixelRatio || 1);
 				const newScrollTop = startScrollTop + (deltaY / this.element.clientHeight) * this.element.scrollHeight;
-				console.log('touchmove: deltaY =', deltaY, 'newScrollTop =', newScrollTop);
 
 				this.element.scrollTop = Math.min(Math.max(newScrollTop, 0), maxScrollTop);
 				this.updateScrollbarThumbPosition();
@@ -92,7 +83,6 @@ class SimpleScrollbar {
 		});
 
 		this.element.addEventListener('scroll', () => {
-			console.log('scroll: scrollTop =', this.element.scrollTop);
 			this.updateScrollbarThumbPosition();
 		});
 
@@ -115,15 +105,13 @@ class SimpleScrollbar {
 		}, { passive: false });
 	}
 
-	updateScrollbarThumbPosition() {
-		const scrollTop = this.element.scrollTop;
-		const contentHeight = this.element.scrollHeight;
-		const visibleHeight = this.element.clientHeight;
-		const scrollbarTop = (scrollTop / contentHeight) * visibleHeight;
-		console.log('updateScrollbarThumbPosition: scrollTop =', scrollTop, 'scrollbarTop =', scrollbarTop);
-
-		this.scrollbarThumb.style.transform = `translateY(${scrollbarTop}px)`;
-	}
+    updateScrollbarThumbPosition() {
+        const scrollPercentage = this.element.scrollTop / (this.element.scrollHeight - this.element.clientHeight);
+        const maxScrollbarTop = this.element.clientHeight - this.scrollbarThumb.clientHeight;
+        const scrollbarTop = scrollPercentage * maxScrollbarTop;
+    
+        this.scrollbarThumb.style.transform = `translateY(${scrollbarTop}px)`;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
