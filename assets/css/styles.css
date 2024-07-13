@@ -1,5 +1,5 @@
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Inter:wght@400;700&display=swap');
 
 /* reset styles */
 * {
@@ -45,6 +45,7 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
 	flex: 2;
 	display: flex;
 	flex-direction: column;
+	padding: 2rem;
 }
 
 .profile-image {
@@ -71,6 +72,7 @@ body, p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, strong, em, small, lab
 .inner-left,
 .inner-right {
 	flex: 1;
+    padding: 2rem 0;
 	overflow-y: auto;
 }
 
