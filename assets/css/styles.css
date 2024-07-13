@@ -8,23 +8,21 @@
 	box-sizing: border-box;
 }
 
-html {
-    zoom: 0.9;
+html, body {
 	height: 100%;
 	overflow: hidden;
 }
 
 body {
-    height: 100%;
 	background-color: #113;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Inter', sans-serif;
-	font-size: 26px;
+	font-size: 23.5px;
 	font-weight: 400;
 	color: #eee;
-	line-height: 48px;
+	line-height: 43.5px;
 }
 
 .container {
@@ -44,7 +42,7 @@ body {
 	flex: 2;
 	display: flex;
 	flex-direction: column;
-	padding: 48px;
+	padding: 43.5px;
 	overflow-y: auto;
 }
 
@@ -65,14 +63,14 @@ body {
 
 .top-row {
 	flex-direction: column;
-	padding-bottom: 48px;
+	padding-bottom: 43.5px;
 	overflow-y: none;
 }
 
 .bottom-row {
 	flex-direction: row;
 	border-top: 1px solid #eee;
-	padding-top: 48px;
+	padding-top: 43.5px;
 	overflow-y: auto;
 }
 
@@ -83,28 +81,29 @@ body {
 }
 
 .inner-left {
-	padding-right: 48px;
+	padding-right: 43.5px;
 }
 
 .inner-right {
-	padding-left: 48px;
+	padding-left: 43.5px;
 }
 
 h1 {
 	font-family: 'GFS Didot', serif;
-	font-size: 64px;
-	line-height: 64px;
-	margin: 0 0 64px 0;
+    font-weight: 400;
+	font-size: 58px;
+	line-height: 58px;
+	margin: 0 0 58px 0;
 }
 
 .subtitle {
-	font-size: 32px;
+	font-size: 29px;
 }
 
 h2 {
 	font-size: 42px;
 	font-weight: 600;
-	margin-bottom: 48px;
+	margin-bottom: 43.5px;
 }
 
 ul {
@@ -159,7 +158,7 @@ a:hover, a:focus {
 
 .simplebar-scrollbar::before {
     background: #3E3E5A !important;
-    width: 32px !important;
+    width: 29px !important;
     border-radius: 0 !important; /* Remove rounded borders */
 }
 
