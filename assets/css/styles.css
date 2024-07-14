@@ -115,8 +115,8 @@ a:visited {
 }
 
 a:hover, a:focus {
-    color: #4629b7;
-    /*text-decoration: none;*/
+    /*color: #321f7b;*/
+    text-decoration: none;
 }
 
 /* responsive */
@@ -220,7 +220,7 @@ footer a:visited {
 
 /* icons */
 .header-icons {
-    color: #4629b7;
+    color: #321f7b;
     font-size: 34px;
     line-height: 96px;
     text-decoration: none;
