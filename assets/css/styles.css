@@ -217,6 +217,18 @@ footer a:visited {
     font-size: 20px;
 }
 
+/* icons */
+.linkedin-icon {
+    color: #eee;
+    font-size: 34px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/*.linkedin-icon:hover {
+    color: #082b8d;
+}*/
+
 /* custom scrollbar */
 [data-scrollbar] {
     position: relative;
