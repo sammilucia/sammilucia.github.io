@@ -220,14 +220,14 @@ footer a:visited {
 
 /* icons */
 .header-icons {
-    color: #eee;
+    color: #4629b7;
     font-size: 34px;
     line-height: 64px;
     text-decoration: none;
 }
 
 .header-icons:hover {
-    color: #4629b7;
+    color: #eee;
 }
 
 /* custom scrollbar */
