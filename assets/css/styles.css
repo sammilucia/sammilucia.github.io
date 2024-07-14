@@ -115,7 +115,8 @@ a:visited {
 }
 
 a:hover, a:focus {
-    text-decoration: none;
+    color: #4629b7;
+    /*text-decoration: none;*/
 }
 
 /* responsive */
@@ -218,16 +219,16 @@ footer a:visited {
 }
 
 /* icons */
-.linkedin-icon {
+.header-icons {
     color: #eee;
     font-size: 34px;
-    margin-top: 10px;
+    line-height: 64px;
     text-decoration: none;
 }
 
-/*.linkedin-icon:hover {
-    color: #082b8d;
-}*/
+.header-icons:hover {
+    color: #4629b7;
+}
 
 /* custom scrollbar */
 [data-scrollbar] {
