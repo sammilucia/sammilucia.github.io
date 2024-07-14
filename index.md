@@ -7,7 +7,7 @@ title: Samantha Glocker
     Systems Engineer<br />
     Entrepreneur<br />
     Complex Problem Solver<br />
-    <a href="https://www.linkedin.com/in/samanthaglocker" target="_blank" class="linkedin-icon">
+    <a href="https://www.linkedin.com/in/samanthaglocker" target="_blank" class="header-icons">
         <i class="fab fa-linkedin"></i>
     </a>
 </p>
