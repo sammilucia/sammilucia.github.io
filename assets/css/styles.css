@@ -210,7 +210,6 @@ footer {
 footer a,
 footer a:visited {
     font-weight: 400;
-    text-decoration: underline;
 }
 
 .social-links a {
