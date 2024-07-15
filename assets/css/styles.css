@@ -112,7 +112,7 @@ a:visited {
     color: #eee;
     font-weight: 550;
     text-decoration: underline;
-    transition: color 300ms ease;
+    transition: color 200ms ease;
 }
 
 a:hover, a:focus {
