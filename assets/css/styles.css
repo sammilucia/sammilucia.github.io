@@ -1,69 +1,5 @@
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot:wght300;700&display=swap');
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-Light.woff2') format('woff2');
-	font-weight: 300;
-	font-style: italic;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-LightItalic.woff2') format('woff2');
-	font-weight: 300;
-	font-style: italic;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-Regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-Italic.woff2') format('woff2');
-	font-weight: 400;
-	font-style: italic;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-MediumItalic.woff2') format('woff2');
-	font-weight: 500;
-	font-style: italic;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-SemiBold.woff2') format('woff2');
-	font-weight: 600;
-	font-style: normal;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
-
-@font-face {
-	font-family: 'InterDisplay';
-	src: url('/assets/fonts/InterDisplay-SemiBoldItalic.woff2') format('woff2');
-	font-weight: 600;
-	font-style: italic;
-	unicode-range: U+0020-007E, U+00A0, U+00A2-00BE, U+00D7, U+00F7, U+2190-2193, U+2248, U+2260, U+2264, U+2265;
-}
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&Inter:wght100..600&display=swap');
 
 /* reset styles */
 * {
@@ -82,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'InterDisplay', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 23.5px;
     font-weight: 300;
     color: #eee;
@@ -174,7 +110,7 @@ ul {
 a,
 a:visited {
     color: #eee;
-    font-weight: 500;
+    font-weight: 550;
     text-decoration: underline;
 }
 
@@ -274,7 +210,7 @@ footer {
 
 footer a,
 footer a:visited {
-    font-weight: 300;
+    font-weight: 550;
 }
 
 .social-links a {
