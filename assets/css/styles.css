@@ -125,6 +125,12 @@ a:hover, a:focus {
     .container {
         flex-direction: column;
         height: auto;
+        overflow: initial;
+    }
+
+    .left-section,
+    .right-section {
+        flex: none;
     }
 
     .left-section {
@@ -137,6 +143,11 @@ a:hover, a:focus {
         top: 400px;
         width: initial;
         height: initial;
+    }
+
+    .top-row,
+    .bottom-row {
+        flex: none;
     }
 
     .bottom-row {
