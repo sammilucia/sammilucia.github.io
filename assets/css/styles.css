@@ -205,6 +205,11 @@ a:hover, a:focus {
 
 .article-container h2 {
     font-family: 'GFS Didot', serif;
+    padding-top: 23.5px;
+}
+
+.article-container h3 {
+    padding-top: 23.5px;
 }
 
 .categories-list {
@@ -225,12 +230,12 @@ a:hover, a:focus {
 }
 
 .right-column h2 {
+    font-family: 'Inter', sans-serif;
     font-size: 29px;
 }
 
 /* tables */
 table {
-	width: 100%;
 	border-collapse: collapse;
 	margin: 20px 0;
 	font-size: 1em;
@@ -244,6 +249,10 @@ table thead tr {
 	text-align: left;
 }
 
+table th {
+    background-color: #3E3E5A;
+}
+
 table th, table td {
 	padding: 12px 15px;
 	border: 1px solid #392C8F;
@@ -254,16 +263,11 @@ table tbody tr {
 }
 
 table tbody tr:nth-of-type(even) {
-	background-color: #f3f3f3;
+	background-color: #161343;
 }
 
 table tbody tr:last-of-type {
-	border-bottom: 2px solid #392C8F;
-}
-
-table tbody tr.active-row {
-	font-weight: bold;
-	color: #225;
+	border-bottom: 1px solid #392C8F;
 }
 
 /* footer */
