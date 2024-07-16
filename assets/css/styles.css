@@ -109,7 +109,7 @@ ul {
 }
 
 ol {
-    margin: 0 29px;
+    margin: 0 0 29px 49px;
 }
 
 /* link styles */
@@ -229,7 +229,7 @@ a:hover, a:focus {
 
 .center-column ul {
     list-style-type: initial;
-    margin: 0 29px;
+    margin: 0 0 29px 49px;
 }
 
 .right-column h2 {
@@ -292,6 +292,12 @@ footer a:visited {
 .social-links a {
     margin: 0 7px;
     font-size: 20px;
+}
+
+.author {
+    font-family: 'GFS Didot', serif;
+    font-size: 26px;
+    line-height: 43.5px;
 }
 
 /* icons */

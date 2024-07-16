@@ -37,7 +37,7 @@ Please feel free to give feedback or ask questions. This article is improved bas
 
 ### Level 1B:
 
-### Lecvel 2A: More Comprehensive Tests
+### Level 2A: More Comprehensive Tests
 
 - MTHFR
 - COMT
@@ -56,15 +56,23 @@ Please feel free to give feedback or ask questions. This article is improved bas
 | P.O | take orally (tablet, capsule, etc.) |
 | sub.Q | take by subcutaneous injection |
 
-### Molecules
+## Level 1 Molecules
 
 | Molecule | Dosage | Mechanism | References | Notes |
 | -------- | ------ | --------- | ---------- | ----- |
 | Vitamin D3 | 5000* IU per day | | | Aim for 50 to 80 ng/dl. * Can take 10000 IU q.d. to start until you're within range |
 | Vitamin K (as K1 phytonadione 1500 mcg, K2 menaquinone-4 1000 mcg, K2 _trans_ menaquinone-7 100 mcg | 2600 mcg q.d | | | |
+| Iodine | ______ as potassium iodide | | | |
+| Magnesium glycinate | 1000–2000mg q.a.h | | | |
+| Vitamin B12 | as metyhlcobalamin | | | |
+| DHA/EPA | 1000 mg b.d | | | Third-party tested low TOTOX (________) |
 
-D3
+## Level 2 Molecules
 
-Magnesium
-
-B12
+| Molecule | Dosage | Mechanism | References | Notes |
+| -------- | ------ | --------- | ---------- | ----- |
+| Methylfolate | | | | |
+| NAD+ | | | | |
+| NAC | ______ as potassium iodide | | | |
+| Alpa-lipoic acid | 600 mg b.d | | | |
+| Metformin | | | | |
