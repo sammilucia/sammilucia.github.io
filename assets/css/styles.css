@@ -302,7 +302,7 @@ footer a:visited {
 
 /* icons */
 .header-icons,
-a.header-icons:visited {
+.header-icons:visited {
     color: #392C8F;
     font-size: 34px;
     line-height: 96px;
