@@ -36,10 +36,20 @@ Please feel free to give feedback or ask questions. This article is improved bas
   - Estrogen (E2) — yes, men too
   - Progesterone (P4) — yes, men too
   - SHBG (sex hormone binding globulin)
+- Fasting glucose
+- HbA1c
 
 ### Supplements and Activities
 
 - Walking
+- Berberine and/or metformin
+- Avoid glucose spikes
+- 
+
+Stop:
+- All oils except:
+  - Extra virgin olive oil (EVOO)
+  - Coconut oil
 
 ## Level 2
 

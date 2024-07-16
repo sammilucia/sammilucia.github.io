@@ -30,6 +30,10 @@
   url: https://www.nexusmods.com/starwarsjedifallenorder/mods/778
   description: Unreal Engine and Respawn plugin fixes
 
+- name: 'Music'
+  url: https://soundcloud.com/samanthaglocker
+  description: Music for film
+
 - name: NobaraProject.org
   url: https://nobaraproject.org
   description: An up-to-date user-friendly distro based on Fedora
