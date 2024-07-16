@@ -301,12 +301,12 @@ footer a:visited {
 }
 
 /* icons */
-.header-icons {
+.header-icons a {
     color: #392C8F;
     font-size: 34px;
     line-height: 96px;
     text-decoration: none;
-    transition: color 300ms ease;
+    transition: color 200ms ease;
 }
 
 .header-icons:hover {
