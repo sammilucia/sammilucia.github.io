@@ -183,16 +183,26 @@ a:hover, a:focus {
 .article-container {
     display: flex;
     flex-grow: 1;
+    height: 100%;
     padding: 43.5px;
     gap: 43.5px;
 }
 
 .article-meta {
     font-size: 23px;
-    margin-bottom: 29px;
+    margin-bottom: 43.5px;
     border-top: 1px solid #eee;
-    padding-top: 29px;
+    padding-top: 14.5px;
 }
+
+.article-container h1 {
+    margin: 0 0 72.5px 0;
+}
+
+.article-container h2 {
+    font-family 'GFS Didot', serif;
+}
+
 
 .categories-list {
     list-style-type: none;
@@ -213,11 +223,11 @@ footer {
     align-items: center;
     padding: 14.5px 43.5px;
     border-top: 1px solid #eee;
+    background-color: #131035;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-    background: none;
 }
 
 footer a,
