@@ -21,7 +21,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 23.5px;
     font-weight: 300;
-    color: #eee;
+    color: #ddd;
     line-height: 43.5px;
 }
 
@@ -70,7 +70,7 @@ p {
 
 .bottom-row {
     flex-direction: row;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
     padding-top: 43.5px;
     overflow-y: auto;
 }
@@ -108,10 +108,14 @@ ul {
     list-style-type: none;
 }
 
+ol {
+    margin: 0 29px;
+}
+
 /* link styles */
 a,
 a:visited {
-    color: #eee;
+    color: #ddd;
     font-weight: 550;
     text-decoration: underline;
     transition: color 200ms ease;
@@ -162,7 +166,7 @@ a:hover, a:focus {
     .inner-right {
         padding-right: 0;
         padding: 43.5px 0;
-        border-top: 1px solid #eee;
+        border-top: 1px solid #ddd;
     }
 
     .article-container {
@@ -193,7 +197,7 @@ a:hover, a:focus {
 .article-meta {
     font-size: 23px;
     margin-bottom: 43.5px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
     padding-top: 14.5px;
 }
 
@@ -216,20 +220,16 @@ a:hover, a:focus {
 
 .center-column h2 {
     font-family: 'GFS Didot', serif;
-    padding-top: 23.5px;
 }
 
+.center-column h2,
 .center-column h3 {
     padding-top: 23.5px;
 }
 
-.center-column li {
-    margin: initial;
-    padding: initial;
-}
-
 .center-column ul {
     list-style-type: initial;
+    margin: 0 29px;
 }
 
 .right-column h2 {
@@ -245,7 +245,7 @@ table {
 }
 
 table thead tr {
-	color: #eee;
+	color: #ddd;
 	text-align: left;
 }
 
@@ -276,7 +276,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 14.5px 43.5px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
     background-color: #131035;
     position: fixed;
     width: 100%;
@@ -304,7 +304,7 @@ footer a:visited {
 }
 
 .header-icons:hover {
-    color: #eee;
+    color: #ddd;
 }
 
 /* custom scrollbar */
