@@ -238,6 +238,7 @@ table {
 	border-collapse: collapse;
 	margin: 14.5px 0;
 	min-width: 400px;
+    vertical-align: top;
 }
 
 table thead tr {
@@ -246,11 +247,11 @@ table thead tr {
 }
 
 table th {
-    background-color: #392C8F;
+    background-color: #2f2477;
 }
 
 table th, table td {
-	padding: 12px 15px;
+	padding: 9px 14.5px;
 	border: 1px solid #392C8F;
 }
 
