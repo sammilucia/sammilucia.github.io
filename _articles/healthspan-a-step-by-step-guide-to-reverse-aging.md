@@ -40,6 +40,7 @@ Please feel free to give feedback or ask questions. This article is improved bas
 | Abbreviation | Meaning |
 | ------------ | ------- |
 | q.d | once per day (any time) |
+| b.d | twice per day, equally spaced |
 | q.a.m | once per day in the morning |
 | q.a.h | once per day at night |
 | q.r.n | as needed |
@@ -50,8 +51,8 @@ Please feel free to give feedback or ask questions. This article is improved bas
 
 | Molecule | Dosage | Mechanism | References | Notes |
 | -------- | ------ | --------- | ---------- | ----- |
-| Vitamin D3 | 5,000 IU per day | | | |
-| Vitamin K (as K1 phytonadione 1500 mcg, K2 menaquinone-4 1000 mcg, K2 _trans_ menaquinone-7 100 mcg | | | | |
+| Vitamin D3 | 5000* IU per day | | | Aim for 50 to 80 ng/dl. * Can take 10000 IU q.d. to start until you're within range |
+| Vitamin K (as K1 phytonadione 1500 mcg, K2 menaquinone-4 1000 mcg, K2 _trans_ menaquinone-7 100 mcg | 2600 mcg q.d | | | |
 
 D3
 
