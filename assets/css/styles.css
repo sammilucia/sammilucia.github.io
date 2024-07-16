@@ -106,8 +106,6 @@ h2 {
 
 ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 /* link styles */
@@ -208,10 +206,6 @@ a:hover, a:focus {
     margin-bottom: 14.5px;
 }
 
-.left-column {
-
-}
-
 .center-column {
     max-width: 1200px;
 }
@@ -227,6 +221,15 @@ a:hover, a:focus {
 
 .center-column h3 {
     padding-top: 23.5px;
+}
+
+.center-column li {
+    margin: initial;
+    padding: initial;
+}
+
+.center-column ul {
+    list-style-type: initial;
 }
 
 .right-column h2 {

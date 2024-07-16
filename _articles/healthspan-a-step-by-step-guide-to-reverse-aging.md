@@ -7,13 +7,22 @@ categories: [aging]
 
 ## Where to start
 
-There's a lot of information, especially if you're just getting into healthspan, reversing aging, longevity, or simply looking after yourself as best you can.
+There's a lot of information on this topic, especially if you're just getting into healthspan, reversing aging, longevity, or simply looking after yourself as best you can. So I'll cut to the chase. This page is here to cut through the the crap.
 
-So I'll cut this short. This page is here to cut through the BS. It will be updated from time to time with the latest information, and I'll give it to you in bite-size chunks. This should help you start with the highest return changes, then get more sophisticated if you want to.
+At a glance this article will:
+1. Be updated from time to time with the latest research and thinking
+2. Explain thinking and have citations of well constructed studies
+3. Attempt to make the information as _usable_ as possible
+4. Address physical signs of aging (your appearance) as well as healthspan (reasoning is below)
+5. Be budget concious where possible
+
+If you haven't started, this article will help you start. If you're looking for the next steps, the article will help you check your priorities and achieve advanced levels of anti-aging.
 
 Please feel free to give feedback or ask questions. This article is improved based on reader feedback, as well as my own ongoing research and discussions with medical professionals.
 
 **Disclaimer:** This page is for informational purposes only, is not intended as advice, and anything you do is completely at your own  risk.
+
+## Why Physiological Appearance is Important
 
 ### Level 1A: Basic Tests
 
