@@ -13,7 +13,7 @@
         </div>
         <main class="center-column">
             <h1>{{ page.title }}</h1>
-            <p class="article-meta">Last updated {{ page.date | date: "%d %B %Y" }} in 
+            <p class="article-meta">Last updated <strong>{{ page.date | date: "%d %B %Y" }}</strong> in 
                 {% for category in page.categories %}
                     <a href="/category/{{ category | slugify }}">#{{ category }}</a>
                 {% endfor %}

@@ -24,7 +24,9 @@ Please feel free to give feedback or ask questions. This article is improved bas
 
 ## Why Physiological Appearance is Important
 
-### Level 1A: Basic Tests
+## Level 1
+
+### Basic Tests
 
 - D3
 - Whole blood panel
@@ -35,16 +37,28 @@ Please feel free to give feedback or ask questions. This article is improved bas
   - Progesterone (P4) — yes, men too
   - SHBG (sex hormone binding globulin)
 
-### Level 1B:
+### Supplements and Activities
 
-### Level 2A: More Comprehensive Tests
+- Walking
+
+## Level 2
+
+### More Comprehensive Tests
 
 - MTHFR
 - COMT
 - Heavy metals
 - Micotoxins
 
-### Abbreviations
+### Supplements and Activities
+
+- Small trampoline
+- Infrared light therapy
+- Fasting (Grandfather, Father, Son)
+- Earthing
+- Ionised water
+
+## Dosage Abbreviations
 
 | Abbreviation | Meaning |
 | ------------ | ------- |
