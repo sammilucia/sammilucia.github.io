@@ -5,7 +5,7 @@ date: 2024-07-13
 categories: [aging]
 ---
 
-# Where to start
+## Where to start
 
 There's a lot of information, especially if you're just getting into healthspan, reversing aging, longevity, or simply looking after yourself as best you can.
 
@@ -15,7 +15,7 @@ Please feel free to give feedback or ask questions. This article is improved bas
 
 **Disclaimer:** This page is for informational purposes only, is not intended as advice, and anything you do is completely at your own  risk.
 
-## Level 1A: Basic Tests
+### Level 1A: Basic Tests
 
 - D3
 - Whole blood panel
@@ -26,16 +26,16 @@ Please feel free to give feedback or ask questions. This article is improved bas
   - Progesterone (P4) — yes, men too
   - SHBG (sex hormone binding globulin)
 
-## Level 1B:
+### Level 1B:
 
-## Lecvel 2A: More Comprehensive Tests
+### Lecvel 2A: More Comprehensive Tests
 
 - MTHFR
 - COMT
 - Heavy metals
 - Micotoxins
 
-## Abbreviations
+### Abbreviations
 
 | Abbreviation | Meaning |
 | ------------ | ------- |
@@ -47,7 +47,7 @@ Please feel free to give feedback or ask questions. This article is improved bas
 | P.O | take orally (tablet, capsule, etc.) |
 | sub.Q | take by subcutaneous injection |
 
-## Molecules
+### Molecules
 
 | Molecule | Dosage | Mechanism | References | Notes |
 | -------- | ------ | --------- | ---------- | ----- |

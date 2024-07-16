@@ -25,6 +25,10 @@ body {
     line-height: 43.5px;
 }
 
+p {
+    margin-bottom: 29px;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -116,7 +120,7 @@ a:visited {
 }
 
 a:hover, a:focus {
-    color: #392c8f;
+    color: #392C8F;
     text-decoration: none;
 }
 
@@ -200,9 +204,8 @@ a:hover, a:focus {
 }
 
 .article-container h2 {
-    font-family 'GFS Didot', serif;
+    font-family: 'GFS Didot', serif;
 }
-
 
 .categories-list {
     list-style-type: none;
@@ -213,10 +216,57 @@ a:hover, a:focus {
     margin-bottom: 14.5px;
 }
 
+.left-column {
+
+}
+
+.center-column {
+    max-width: 1200px;
+}
+
 .right-column h2 {
     font-size: 29px;
 }
 
+/* tables */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	font-size: 1em;
+	font-family: sans-serif;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+	color: #eee;
+	text-align: left;
+}
+
+table th, table td {
+	padding: 12px 15px;
+	border: 1px solid #392C8F;
+}
+
+table tbody tr {
+	border-bottom: 1px solid #392C8F;
+}
+
+table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+	border-bottom: 2px solid #392C8F;
+}
+
+table tbody tr.active-row {
+	font-weight: bold;
+	color: #225;
+}
+
+/* footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -242,7 +292,7 @@ footer a:visited {
 
 /* icons */
 .header-icons {
-    color: #392c8f;
+    color: #392C8F;
     font-size: 34px;
     line-height: 96px;
     text-decoration: none;
