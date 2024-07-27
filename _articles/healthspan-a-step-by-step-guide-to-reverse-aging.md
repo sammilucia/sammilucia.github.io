@@ -58,7 +58,7 @@ Stop:
 - MTHFR
 - COMT
 - Heavy metals
-- Micotoxins
+- Mycotoxins
 
 ### Supplements and Activities
 
